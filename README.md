@@ -1,4 +1,4 @@
-# Risco de Crédito
+# Classificação de Risco de Crédito
 
 # 1. Descrição do projeto
 - Em um mercado financeiro cada vez mais competitivo, a capacidade de avaliar com precisão o risco de crédito dos clientes é essencial para a sustentabilidade e o crescimento de qualquer instituição bancária. O banco Coderbank, comprometido em fornecer serviços financeiros de excelência, enfrenta o desafio de aumentar a precisão na avaliação do risco de crédito para minimizar perdas e maximizar a rentabilidade. Uma vez que, decisões equivocadas podem resultar em inadimplência, impactando negativamente os lucros e a reputação da instituição. O desafio reside em identificar quais clientes representam um risco de inadimplência mais elevado e ajustar as políticas de crédito de acordo com esses insights.
@@ -12,17 +12,15 @@
 5. Interpretação e Ação: Traduzimos os resultados técnicos em recomendações práticas para a alta gerência, visando otimizar as políticas de concessão de crédito.
    
 **1.2 Problema e objetivos de negócio**
-- O banco Coderbank quer identificar quais fatores influenciam a inadimplência de clientes para melhorar a avaliação de risco de crédito.
-  
-  Para atingir tal objetivo buscamos responder às seguintes perguntas:
-- Quais são os fatores determinantes para a inadimplência de crédito?
-- Como características dos tomadores de crédito influenciam o risco de crédito?
-- Qual é a distribuição de risco entre diferentes tipos de crédito?
-  
-**1.3 Objetivos:**
+- Identificar quais fatores influenciam a inadimplência de clientes para melhorar a avaliação de risco de crédito.
 - Construir um modelo de previsão de inadimplência.
 - Identificar e compreender as principais variáveis que afetam a inadimplência.
 - Fornecer insights para a alta gerência sobre perfis de risco.
+  
+  Para atingir tais objetivos buscamos responder às seguintes perguntas:
+- Quais são os fatores determinantes para a inadimplência de crédito?
+- Como características dos tomadores de crédito influenciam o risco de crédito?
+- Qual é a distribuição de risco entre diferentes tipos de crédito?
 
 # 2. Fonte do Dataset e Critérios de Seleção (Data Acquisition)
 - Fonte do Dataset: Kaggle - German Credit Data (https://www.kaggle.com/datasets/uciml/german-credit)
