@@ -86,7 +86,3 @@ Critérios de Seleção:
 4.Modelagem.
 5.Validação.
 6.Implantação.
-   
-# 5. Análise Exploratória de Dados (EDA)
-**5.1 Comportamento das Variáveis**
-Para entender melhor como cada variável se comporta e sua relação com a inadimplência, realizaremos uma análise bivariada
