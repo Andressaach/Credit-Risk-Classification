@@ -87,7 +87,7 @@ Critérios de Seleção:
 5.Validação.
 6.Implantação.
 
-## Apresentação da análise "Risco de Crédito".
+# 5. Apresentação da análise "Risco de Crédito".
 - Após entrar no local que o arquivo esta publicado.
 - Clique no botão de "Download" ou "Raw" para abrir o arquivo diretamente.
 - [Arquivo](https://github.com/Andressaach/Risco-de-Credito/blob/main/Apresenta%C3%A7%C3%A3o.ppt)
