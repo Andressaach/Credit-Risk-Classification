@@ -78,7 +78,31 @@ Critérios de Seleção:
      Tipo: Categórica.
      Comportamento: Indica se o cliente é considerado um bom ou mau risco de crédito.
      Importância: Variável alvo para a modelagem preditiva de inadimplência.
-  
+
+## Limpeza de Dados
+### Tratamento de Valores Ausentes:
+- Identificamos e tratamos valores ausentes nas variáveis mais críticas.
+- Valores ausentes foram preenchidos utilizando imputação com a mediana para variáveis numéricas e a moda para variáveis categóricas. Esse método foi escolhido para evitar distorções nos dados, preservando a distribuição original.
+
+### Remoção de Outliers:
+- Utilizamos o método de IQR (Interquartile Range) para identificar outliers. Os valores fora de 1,5 vezes o intervalo interquartil foram considerados outliers. Dependendo do contexto, os outliers foram removidos ou substituídos por valores mais próximos dentro do intervalo aceitável.
+
+### Transformação de Variáveis:
+- Variáveis como 'renda' e 'montante de crédito' foram transformadas utilizando logaritmo para reduzir a assimetria. Outras variáveis categóricas foram codificadas usando one-hot encoding.
+
+### Normalização e Padronização:
+- Variáveis contínuas foram normalizadas para o intervalo [0, 1] ou padronizadas para terem média 0 e desvio padrão 1, dependendo da necessidade do modelo.
+
+### Verificação de Consistência:
+- Revisamos os dados para garantir que não houvesse inconsistências lógicas (ex.: idade negativa, renda zero para clientes empregados).
+
+## Segmentação de Registros
+- **Perfil de Risco**: Clientes foram categorizados em diferentes níveis de risco (ex.: baixo, médio, alto) com base em variáveis como histórico de crédito e montante de crédito.
+- **Faixas Etárias**: Os dados foram segmentados em diferentes faixas etárias para analisar como a idade influencia o risco de inadimplência.
+- **Níveis de Renda**: A renda foi segmentada em diferentes intervalos para entender a relação entre capacidade de pagamento e inadimplência.
+- **Status de Emprego**: Clientes foram categorizados com base na sua situação de emprego para avaliar o impacto da estabilidade de renda.
+- **Status da Conta Corrente**: Os registros foram segmentados de acordo com o status da conta corrente (ex.: saldo positivo, saldo negativo) para identificar padrões de risco associados.
+
 # 4. Pipeline de soluções
 1.Entendimento do negócio.
 2.Compreensão dos dados.
