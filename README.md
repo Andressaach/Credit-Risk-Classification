@@ -71,5 +71,13 @@ This project aims to predict the credit risk of individuals using the **German C
    ```bash
    git clone https://github.com/Andressaach/Credit-Risk-Classification.git
 
-2. Clone the repository: 
+2. Navigate to the project folder:  
+   ```bash
+   cd Credit-Risk-Classification
+   
+3. Open Jupyter Notebook and run the notebooks in order:
+
+- 01_EDA.ipynb
+- 02_preprocessing.ipynb
+- 03_modeling.ipynb
 
