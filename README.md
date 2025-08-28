@@ -7,9 +7,8 @@ Accurately assessing credit risk is crucial for financial institutions to minimi
 
 ## Objectives
 - Analyze and understand the dataset.
-- Preprocess data to handle missing values, outliers, and categorical variables.
+- Preprocess data to handle missing values and categorical variables.
 - Build and evaluate Machine Learning models to classify credit risk.
-- Identify key features impacting credit risk decisions.
 
 ---
 
