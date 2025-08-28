@@ -1,70 +1,108 @@
-# Credit Risk Classification Project
+Credit Risk Classification Project
+📌 Overview
 
-## Overview
-Accurately assessing credit risk is crucial for financial institutions to minimize default rates and make informed lending decisions. This project aims to predict the credit risk of individuals using the **German Credit Dataset**. 
+This project aims to predict the credit risk of individuals using the German Credit Dataset, helping financial institutions reduce defaults and improve loan decision-making processes.
 
----
+🎯 Objectives
 
-## Objectives
-- Analyze and understand the dataset.
-- Preprocess data to handle missing values and categorical variables.
-- Build and evaluate Machine Learning models to classify credit risk.
+Perform Exploratory Data Analysis (EDA) to understand data distributions and relationships.
 
----
+Apply data preprocessing techniques, including handling outliers, scaling, and categorical encoding.
 
-## Dataset
-- Source: [German Credit Dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data))
-- Features: 20 attributes including age, credit history, employment status, and loan purpose.
-- Target: `CreditRisk` – binary classification (`Good` / `Bad` credit risk).
+Build, tune, and compare Machine Learning models for binary credit risk classification.
 
----
+Evaluate models using multiple performance metrics: accuracy, precision, recall, F1-score, and ROC AUC.
 
-## Technologies & Tools
-- **Programming Languages:** Python
-- **Libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn
-- **Environment:** Jupyter Notebook
+Identify the most influential features for credit risk prediction and provide actionable insights.
 
----
+📊 Dataset
 
-## Project Workflow
-1. **Data Preprocessing**
-   - Handling missing values and duplicates
-   - Encoding categorical variables
-   - Feature scaling
+Source: German Credit Dataset (UCI Machine Learning Repository)
 
-2. **Exploratory Data Analysis (EDA)**
-   - Understanding variable distributions
-   - Correlation analysis
-   - Visualizing patterns and relationships
+Features: 20 attributes, such as age, credit history, loan duration, and purpose.
 
-3. **Model Building**
-   - Logistic Regression
-   - Decision Tree
-   - Random Forest
-   - Hyperparameter tuning using GridSearchCV
+Target Variable: CreditRisk (binary classification):
 
-4. **Model Evaluation**
-   - Metrics: Accuracy, Precision, Recall, F1-score
-   - Confusion matrix and feature importance analysis
+True → good credit risk
 
-5. **Insights & Recommendations**
-   - Key factors affecting credit risk
-   - Strategies to minimize default risk
+False → bad credit risk
 
----
+🛠️ Tools & Technologies
 
-## Results
-| Model              | Accuracy | Precision | Recall | F1-score |
-|-------------------|---------|----------|-------|---------|
-| Logistic Regression | 0.75    | 0.72     | 0.68  | 0.70    |
-| Decision Tree       | 0.72    | 0.70     | 0.65  | 0.67    |
-| Random Forest       | 0.80    | 0.78     | 0.74  | 0.76    |
+Language: Python
 
-> Random Forest achieved the best performance, highlighting features such as **Credit History**, **Purpose of Loan**, and **Duration** as critical for predicting credit risk.
+Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
 
----
+Environment: Jupyter Notebook
 
-## How to Run
-1. Clone the repository:
-```bash
-git clone https://github.com/Andressaach/Risco-de-Credito.git
+🔄 Workflow
+
+Data Preprocessing
+
+Handle missing and duplicate values
+
+Encode categorical variables
+
+Normalize numerical features
+
+EDA – Exploratory Data Analysis
+
+Analyze distributions and outliers
+
+Study correlations between features
+
+Identify relevant patterns
+
+Modeling
+
+Algorithms used:
+
+Logistic Regression
+
+Decision Tree
+
+Random Forest
+
+Hyperparameter tuning with GridSearchCV
+
+Evaluation
+
+Accuracy, Precision, Recall, F1-score
+
+ROC AUC
+
+Confusion matrix analysis
+
+📈 Results
+Model	Accuracy	Precision	Recall	F1-score	ROC AUC
+Logistic Regression	0.63	0.64	0.63	0.63	0.59
+Decision Tree	0.64	0.64	0.64	0.64	0.58
+Random Forest	0.66	0.65	0.66	0.66	0.61
+
+➡️ Random Forest achieved the best overall performance with 66% accuracy and ROC AUC of 0.61, outperforming Logistic Regression and Decision Tree.
+
+🚀 How to Run the Project
+
+Clone the repository:
+
+git clone https://github.com/Andressaach/Credit-Risk-Classification.git
+
+
+Navigate to the project folder:
+
+cd Credit-Risk-Classification
+
+
+Open Jupyter Notebook and run the notebooks in order:
+
+01_EDA.ipynb
+
+02_preprocessing.ipynb
+
+03_modeling.ipynb
+
+📌 Conclusion
+
+Random Forest proved to be the most reliable model, although all models achieved moderate performance.
+
+Key factors such as credit history, loan duration, and loan purpose significantly influenced credit risk prediction.
